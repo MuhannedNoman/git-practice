@@ -179,3 +179,29 @@ Commit the changes: Use the following command to commit the resolved changes to 
 ```
 git commit -m "Resolved conflicts"
 ```
+## Last part
+Create a new repository on GitHub: Go to GitHub and create a new repository. Give it a name and description, and choose whether to make it public or private.
+
+Link the local repository to the remote repository: Use the following command to link the local repository to the remote repository:
+```
+git remote add origin <repository-url>
+```
+
+Replace `<repository-url>` with the URL of the remote repository. For example:
+```
+git remote add origin https://github.com/username/repository-name.git
+```
+Push the changes to GitHub: Use the following command to push the changes to GitHub:
+```
+git push -u origin main
+```
+This will push the changes from the local repository to the remote repository on GitHub.
+
+Note: If you created a new branch and made changes to it, you need to push that branch as well. Use the following command to push the branch to GitHub:
+```
+git push -u origin <branch-name>
+```
+Replace `<branch-name>` with the name of the branch you want to push. For example:
+```
+git push -u origin feature-branch
+```
